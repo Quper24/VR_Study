@@ -1,0 +1,72 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6F6F6;
+    font-family: Arial;
+}
+
+.card {
+    width: 80%;
+    height: 80%;
+    max-width: 1013px;
+    max-height: 505px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 1px solid #d7d7d7;
+}
+
+.image {
+    display: inline-block;
+    width: 40%;
+    margin: 65px 100px 65px 49px
+}
+
+.common {
+    display: inline-block;
+    width: 40%;
+    vertical-align: 40px;
+}
+
+H1 {
+    color: #2f2f2f;
+    font-size: 23px;
+}
+
+button {
+    width: 254px;
+    height: 52px;
+    background-color: #ec744a;
+    color: #ffffff;
+    font-size: 19px;
+    border: 0px;
+    outline: 0px;
+}
+
+.description {
+    /* Style for "Накладные" */
+    color: #2f2f2f;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.price {
+    margin-top: 55px;
+
+    color: #2f2f2f;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pricerub {
+    margin-bottom: 55px;
+    color: #2f2f2f;
+    font-size: 30px;
+    font-weight: 400;
+}
