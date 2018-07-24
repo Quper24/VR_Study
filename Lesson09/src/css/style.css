@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  background-color: #f9f9f9; }
+
+.header {
+  text-align: center;
+  margin: 100px; }
+
+.container {
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.box {
+  width: 265px;
+  height: 212px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 25px 25px; }
+
+.img {
+  margin-bottom: 25px; }
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px; }
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px; }
+
+.btn_buy {
+  width: 202px;
+  height: 57px;
+  border: 1px solid #23bac1;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #23bac1;
+  outline: none;
+  transition-duration: 0.5s;
+  margin-bottom: 25px; }
+  .btn_buy:hover {
+    color: white;
+    background-color: #23bac1; }
+  .btn_buy:active {
+    background-color: #000000;
+    transform: translateY(4px);
+    color: red; }

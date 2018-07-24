@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=cyrillic");
+@charset "UTF-8";
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header-contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-contacts__phone {
+  font-size: 22px;
+  margin-right: 13px;
+}
+
+.header-contacts__phone a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #373737;
+}
+
+.header-contacts__phone a:hover {
+  text-decoration: underline;
+}
+
+.header-contacts__phone:first-child {
+  border-right: 1px solid grey;
+  padding-right: 13px;
+}
+
+.main {
+  padding-top: 65px;
+  padding-bottom: 60px;
+  background: #373737 url("../img/main/main-bg.jpg") center no-repeat;
+  position: relative;
+  z-index: 1;
+  /* затемнение фонового изображения на главном экране */
+  /* Оформление главной картинки */
+}
+
+.main::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.main-img {
+  position: relative;
+}
+
+.main-img::after {
+  content: url("../img/main/main-rst.png");
+  position: absolute;
+  z-index: 2;
+  top: 87%;
+  left: 19%;
+}
+
+.main-img::before {
+  content: '';
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  margin-left: -165px;
+}
+
+.main-text__title {
+  font-size: 41px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.main-text__subtitle {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+button {
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  background: #f79d07;
+  padding: 13px 22px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: #f9a71f;
+  cursor: pointer;
+}
+
+button img {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color: #373737;
+}
+
+.main {
+  color: #ffffff;
+}

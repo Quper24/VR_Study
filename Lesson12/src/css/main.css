@@ -1,0 +1,47 @@
+.header {
+  background-color: #fff;
+}
+
+.header-contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-contacts__phone {
+  font-size: 22px;
+  margin: 0 13px;
+}
+
+.header-contacts__phone a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #373737;
+}
+
+.header-contacts__phone a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  background: #f79d07;
+  padding: 13px 22px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button img {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #373737;
+}

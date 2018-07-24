@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    color: #000000;
+}
+
+.header {
+    padding-top: 77px;
+    padding-bottom: 96px;
+}
+
+.book__img {
+    max-width: 100%;
+}
+
+.header-text__title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.header-text__subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.header-text__descr {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 47px;
+}
+
+.header-text_price {
+    font-size: 48px;
+    font-weight: 400;
+    color: #313131;
+    margin-bottom: 50px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button {
+    margin-right: 37px;
+    border-radius: 5px;
+    background-color: #f05a22;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 22px 43px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.button-o {
+    background-color: transparent;
+    padding: 20px 41px;
+    border: 2px #f05a22 solid;
+    color: #f05a22;
+}
+
+
+
+.features {
+    background-color: #f2f2f2;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 89px;
+    color: #333333;
+}
+
+
+.features__img img {
+    width: 58px;
+    margin-bottom: 14px;
+}
+
+.features__text {
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.bought {
+    padding-top: 87px;
+    padding-bottom: 96px;
+}
+
+.bought-title {
+    margin-bottom: 68px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.bought img {
+    max-width: 100%;
+    margin-bottom: 30px;
+}

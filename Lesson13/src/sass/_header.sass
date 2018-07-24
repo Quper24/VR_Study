@@ -1,0 +1,23 @@
+.header
+	padding: 15px 0
+	&-contacts
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			font-size: 22px
+			margin-right: 13px
+			a
+				text-decoration: none
+				cursor: pointer
+				color: $text-color-dark
+				&:hover
+					text-decoration: underline
+			&:first-child
+				border-right: 1px solid grey
+				padding-right: 13px
+

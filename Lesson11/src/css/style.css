@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Muller Regular;
+  src: url("../fonts/MullerRegular.otf"); }
+
+@font-face {
+  src: url("../fonts/MullerExtraBold.otf"); }
+
+@font-face {
+  font-family: Muller Bold;
+  src: url("../fonts/MullerBold.otf"); }
+
+@font-face {
+  font-family: Muller Medium;
+  src: url("../fonts/MullerMedium.otf"); }
+
+* {
+  box-sizing: border-box;
+  margin: 0px; }
+
+body {
+  background: url(../img/bg.jpg) no-repeat top/cover;
+  text-align: center; }
+
+.content {
+  display: block; }
+
+.header {
+  width: 407px;
+  margin: 0 auto 30px auto; }
+
+.title {
+  margin-top: 101px;
+  color: #6c1c02;
+  font-family: "Muller Bold";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 44px; }
+
+.subtitle {
+  height: 66px;
+  color: #000000;
+  font-family: "Muller Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.mb {
+  font-family: "Muller Bold";
+  font-weight: 700; }
+
+.meb {
+  font-family: "Muller Extra Bold";
+  font-weight: 700; }
+
+.main {
+  width: 930px;
+  margin: 0 auto; }
+
+.door {
+  margin: 18px;
+  margin-bottom: 50px;
+  display: inline-block;
+  width: 271px;
+  height: 502px;
+  box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  vertical-align: top; }
+
+.imgdoor {
+  height: 322px;
+  padding-top: 40px; }
+
+.descr {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  color: #393939;
+  font-family: "Muller Regular";
+  font-size: 16px;
+  font-weight: 400;
+  height: 33px; }
+
+.subdescr {
+  color: #7f7f7f;
+  font-family: "Muller Regular";
+  font-size: 14px;
+  font-weight: 400; }
+
+.price {
+  color: #393939;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Muller Medium";
+  font-weight: 500;
+    font-weight-vertical-align: bottom; }
+  .price_rub {
+    font-family: "Muller Bold";
+    font-size: 20px;
+    font-weight: 700; }
+
+.btn {
+  margin: 0 auto 30px; }
+  .btn_catalog {
+    width: 523px;
+    height: 75px;
+    box-shadow: 0 9px 21px rgba(0, 0, 0, 0.15);
+    background-color: #e70000;
+    color: #ffffff;
+    font-family: "Muller Bold";
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none; }
+
+.no320 {
+  margin-top: 30%;
+  display: none;
+  color: red; }
+
+@media (max-width: 1200px) {
+  .btn_catalog {
+    width: 480px; } }
+
+@media (max-width: 992px) {
+  .main {
+    width: 650px; } }
+
+@media (max-width: 992px) {
+  .btn_catalog {
+    width: 350px; } }
+
+@media (max-width: 992px) {
+  .title {
+    margin-top: 50px; } }
+
+@media (max-width: 768px) {
+  .main {
+    width: 500px; } }
+
+@media (max-width: 768px) {
+  .header {
+    width: 300px;
+    margin-bottom: 80px; } }
+
+@media (max-width: 768px) {
+  .btn_catalog {
+    width: 200px; } }
+
+@media (max-width: 500px) {
+  .header {
+    width: 300px;
+    margin: 0 auto 20px auto; } }
+
+@media (max-width: 500px) {
+  .main {
+    width: 300px; } }
+
+@media (max-width: 500px) {
+  .subtitle {
+    font-size: 16px;
+    font-weight: 200; } }
+
+@media (max-width: 400px) {
+  .main {
+    width: 80%; } }
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 24px;
+    font-weight: 200; } }
+
+@media (max-width: 400px) {
+  .door {
+    width: 80%; } }
+
+@media (max-width: 319px) {
+  .no320 {
+    display: block; } }
+
+@media (max-width: 319px) {
+  body {
+    background: black; } }
+
+@media (max-width: 319px) {
+  .content {
+    display: none; } }
