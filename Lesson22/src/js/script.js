@@ -4,6 +4,10 @@ $(function() {
         $('.overlay').show();
     });
 
+    $('.contacts-block__btn').on('click', () => {
+        $('.overlay').show();
+    });
+    
     $('.popup-close').on('click', () => {
         $('.overlay').hide();
     });
@@ -71,30 +75,47 @@ $(function() {
         $('.menu-link').toggleClass('menu-link_active');
         $('.menu').toggleClass('menu-active');
     };
-       $('.menu-link').click(function(){
+    $('.menu-link').click(function() {
         $('.overlay').hide();
-       }) 
+    })
 
     $('.menu-link').click(openclose);
     $('.menu a').click(openclose);
 
 
+    ////////maps
+    ymaps.ready(function() {
+        let myMap = new ymaps.Map('map', {
+                center: [54.752656, 56.002053],
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
 
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init(){ 
-        // Создание карты.    
-        var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчнию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.76, 37.64],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 7
-        });
-    }
+            // Создаём макет содержимого.
+            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+            ),
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Добрый картон',
+                balloonContent: 'ДК'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: './img/contacts/mark.png',
+                // Размеры метки.
+                iconImageSize: [35, 35],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-30, -29]
+            });
+        myMap.behaviors.disable('scrollZoom');
+
+        myMap.geoObjects.add(myPlacemark);
+    });
+
 
 });

@@ -1,5 +1,6 @@
 (function($) {
 
+    
     // Global initialisation flag
     var initialized = false;
 

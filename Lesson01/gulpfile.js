@@ -3,8 +3,8 @@ let gulp = require('gulp'),
     sass = require('gulp-sass'),
     gutil = require('gulp-util'),
     ftp = require('vinyl-ftp'),
-    concatCss = require('gulp-concat-css');
-
+    concatCss = require('gulp-concat-css'),
+    prefixer = require('gulp-autoprefixer');
 
 gulp.task('serve', ['sass'], () => {
 
@@ -13,13 +13,18 @@ gulp.task('serve', ['sass'], () => {
     });
 
     gulp.watch("src/sass/**/*.sass", ['sass']);
-    gulp.watch("src/*.html").on('change', browserSync.reload);
+    gulp.watch("src/*.html,src/*.js").on('change', browserSync.reload);
+
 });
 
 gulp.task('sass', () => {
     return gulp.src("src/sass/**/*.sass")
         .pipe(sass())
-        .pipe(concatCss('main.css'))
+        .pipe(prefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(concatCss('style.css'))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
 });

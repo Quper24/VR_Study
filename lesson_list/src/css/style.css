@@ -32,10 +32,6 @@ body:before {
 }
 
 a {
-  -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
-  -moz-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
-  -ms-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
-  -o-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
   transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
   text-decoration: none;
 }
@@ -79,8 +75,6 @@ a {
 .list {
   -webkit-transform-style: preserve-3d;
   -moz-transform-stle: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   text-transform: uppercase;
   position: absolute;
@@ -110,9 +104,6 @@ a {
 
 .list dt {
   -webkit-transform: translateZ(0.3px);
-  -moz-transform: translateZ(0.3px);
-  -ms-transform: translateZ(0.3px);
-  -o-transform: translateZ(0.3px);
   transform: translateZ(0.3px);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   font-size: 15px;
@@ -128,9 +119,6 @@ a {
 
 .toggle {
   -webkit-transform: translateZ(100px);
-  -moz-transform: translateZ(100px);
-  -ms-transform: translateZ(100px);
-  -o-transform: translateZ(100px);
   transform: translateZ(100px);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -149,6 +137,7 @@ a {
   width: 140px;
   color: #fff;
   left: 50%;
+  display: none;
 }
 
 .toggle:hover {
@@ -158,9 +147,6 @@ a {
 
 .warning {
   -webkit-transform: translateZ(2px);
-  -moz-transform: translateZ(2px);
-  -ms-transform: translateZ(2px);
-  -o-transform: translateZ(2px);
   transform: translateZ(2px);
   background: rgba(255, 255, 255, 0.6);
   position: fixed;
@@ -246,65 +232,38 @@ a {
 
 .one_column {
   -webkit-transform: perspective(1200px) rotateY(40deg) !important;
-  -moz-transform: perspective(1200px) rotateY(40deg) !important;
-  -ms-transform: perspective(1200px) rotateY(40deg) !important;
-  -o-transform: perspective(1200px) rotateY(40deg) !important;
   transform: perspective(1200px) rotateY(40deg) !important;
   -webkit-transform-origin: 110% 25%;
-  -moz-transform-origin: 110% 25%;
-  -ms-transform-origin: 110% 25%;
-  -o-transform-origin: 110% 25%;
   transform-origin: 110% 25%;
   left: 20%;
 }
 
 .two_column {
   -webkit-transform: perspective(900px) rotateY(30deg) !important;
-  -moz-transform: perspective(900px) rotateY(30deg) !important;
-  -ms-transform: perspective(900px) rotateY(30deg) !important;
-  -o-transform: perspective(900px) rotateY(30deg) !important;
   transform: perspective(900px) rotateY(30deg) !important;
   -webkit-transform-origin: 80% 25%;
-  -moz-transform-origin: 80% 25%;
-  -ms-transform-origin: 80% 25%;
-  -o-transform-origin: 80% 25%;
   transform-origin: 80% 25%;
   left: 35%;
 }
 
 .three_column {
   -webkit-transform: perspective(600px) translateZ(1px) !important;
-  -moz-transform: perspective(600px) translateZ(1px) !important;
-  -ms-transform: perspective(600px) translateZ(1px) !important;
-  -o-transform: perspective(600px) translateZ(1px) !important;
   transform: perspective(600px) translateZ(1px) !important;
   left: 50%;
 }
 
 .four_column {
   -webkit-transform: perspective(1200px) rotateY(-30deg) !important;
-  -moz-transform: perspective(1200px) rotateY(-30deg) !important;
-  -ms-transform: perspective(1200px) rotateY(-30deg) !important;
-  -o-transform: perspective(1200px) rotateY(-30deg) !important;
   transform: perspective(1200px) rotateY(-30deg) !important;
   -webkit-transform-origin: -10% 25%;
-  -moz-transform-origin: -10% 25%;
-  -ms-transform-origin: -10% 25%;
-  -o-transform-origin: -10% 25%;
   transform-origin: -10% 25%;
   left: 65%;
 }
 
 .five_column {
   -webkit-transform: perspective(1200px) rotateY(-40deg) !important;
-  -moz-transform: perspective(1200px) rotateY(-40deg) !important;
-  -ms-transform: perspective(1200px) rotateY(-40deg) !important;
-  -o-transform: perspective(1200px) rotateY(-40deg) !important;
   transform: perspective(1200px) rotateY(-40deg) !important;
   -webkit-transform-origin: -10% 25%;
-  -moz-transform-origin: -10% 25%;
-  -ms-transform-origin: -10% 25%;
-  -o-transform-origin: -10% 25%;
   transform-origin: -10% 25%;
   left: 80%;
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>new window</title>
+</head>
+
+<body>
+		<style>
+		body{
+	background: grey;}
+</style>
+
+    <script>
+    i = 0
+    if (i == 10) {
+        clearInterval(timerId)
+    } else {
+        let timerId = setInterval(plusWidth, 2000);
+
+        function plusWidth() {
+
+            let width = document.documentElement.clientWidth;
+            let height = document.documentElement.clientHeight;
+            let square = (width * height);
+
+            console.log(square);
+            window.resizeBy(10, 0)
+            i++
+        }
+    }
+    </script>
+</body>
+
+</html>

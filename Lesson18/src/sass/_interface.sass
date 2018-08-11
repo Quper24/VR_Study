@@ -1,0 +1,42 @@
+.section
+
+	&-title
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 29px
+		&::after
+			margin-top: 12px
+			content: ''
+			display: block
+			height: 6px
+			background: url(../img/title_img.png) center no-repeat
+
+.button
+	font-size: 14px
+	color: $text-color-light
+	background: $active-color
+	padding: 13px 22px
+	font-family: 'Roboto', sans-serif
+	border-radius: 3px
+	border: 1px solid transparent
+	&:hover
+		background-color: lighten($active-color, 5)
+		color: $text-color-light
+		border: 1px solid transparent
+		cursor: pointer 
+	&-o
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid rgba(#373737, 0.5)
+
+
+	img
+		vertical-align: middle
+	&_big
+		padding: 18px 0 18px 0
+		vertical-align: middle
+		width: 35%
+		font-size: 15px
+

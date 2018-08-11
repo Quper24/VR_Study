@@ -1,0 +1,50 @@
+@media (max-width: 991px)
+	.hidden-laptop
+		display: none
+
+
+@media (max-width: 767px)
+	.main
+		text-align: center
+	
+@media (max-width: 575px)
+	.hidden-mobile
+		display: none
+
+	.main
+		&-text
+			margin: 0
+			line-height: 1
+			&__title
+				font-size: 22px
+				color: $active-color
+				margin-bottom: 10px
+			&__subtitle
+				font-size: 18px
+				margin-bottom: 40px
+			&__form
+				padding: 0px
+				background-color: transparent
+
+	.form
+		display: block
+		margin: 0
+		&-title
+			font-size: 15px
+			line-height: 1.4
+			&__important
+				margin-top: 10px
+		&__input
+			text-align: center
+			display: block
+			margin: 0 auto 10px auto
+			width: 290px
+			font-size: 13px
+		&-small
+			padding-left: 0
+			font-size: 13px
+			font-weight: 300
+			line-height: 30px
+	.button_big
+		width: 180px
+	

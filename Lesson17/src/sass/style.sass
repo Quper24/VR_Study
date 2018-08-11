@@ -1,0 +1,23 @@
+@import 'reset'
+@import 'varriables'
+@import 'header'
+@import 'main'
+@import 'interface'
+@import 'modal'
+@import 'media'
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&subset=cyrillic')
+
+*, *:before, *:after
+  transition: .4s ease-in-out
+
+body
+	background-color: #fff
+	font-family: 'Roboto', sans-serif
+	color: $text-color-dark
+.main
+	color: $text-color-light
+
+@media (min-width: 1200px)
+	.container
+		max-width: 968px
+

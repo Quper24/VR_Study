@@ -1,0 +1,105 @@
+*, *:before, *:after
+  transition: .4s ease-in-out
+
+*
+	margin: 0
+	padding: 0
+	border: 0	
+
+body
+	background-color: #fff
+	font-family: 'Roboto', sans-serif
+	color: $text-color-dark
+.main
+	color: $text-color-light
+
+@media (min-width: 1200px)
+	.container
+		max-width: 968px
+
+.section
+
+	&-title
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 29px
+		&::after
+			margin-top: 12px
+			content: ''
+			display: block
+			height: 6px
+			background: url(../img/title_img.png) center no-repeat
+
+.button
+	font-size: 14px
+	color: $text-color-light
+	background: $active-color
+	padding: 13px 22px
+	font-family: 'Roboto', sans-serif
+	border-radius: 3px
+	border: 1px solid transparent
+	&:hover
+		background-color: lighten($active-color, 5)
+		color: $text-color-light
+		border: 1px solid transparent
+		cursor: pointer 
+	&-o
+		background-color: transparent
+		color: $text-color-dark
+		border: 1px solid rgba(#373737, 0.5)
+
+
+	img
+		vertical-align: middle
+	&_big
+		padding: 18px 0 18px 0
+		vertical-align: middle
+		width: 35%
+		font-size: 15px
+
+.slider-arrow
+	position: absolute
+	top: 0
+	height: 100%
+	z-index: 99
+	&_feedback
+		width: 22px
+		&:hover
+			cursor: pointer
+		&_right
+			right: 0
+			background: url(../img/right.png) center no-repeat
+		&_left
+			left: 0
+			background: url(../img/left.png) center no-repeat
+	&_prod
+		width: 22px
+		background-color: #fff
+		border: 1px solid $active-color
+		&:hover
+			cursor: pointer
+		&_right
+			right: 0
+			background: #fff url(../img/arrow_right.png) center no-repeat
+			&:hover
+				background: $active-color url(../img/arrow-right_active.png) center no-repeat
+		&_left
+			left: 0
+			background: #fff url(../img/arrow_left.png) center no-repeat
+			&:hover
+				background: $active-color url(../img/arrow-left_active.png) center no-repeat
+	&_mobile
+		width: 22px
+		&:hover
+			cursor: pointer
+		&_right
+			right: 0
+			background: url(../img/arrow_mobile_right.png) center no-repeat
+		&_left
+			left: 0
+			background: url(../img/arrow_mobile_left.png) center no-repeat
+		__img
+			width: 100%
+
