@@ -7,23 +7,49 @@
 		&_bottom
 			overflow-y: hidden
 			padding: 0 25px
-			.slick-slide
+			&_img
 				position: relative
 				&::before
 					content: ''
+					background-color: rgba(0, 0, 0, .5)
 					display: block
 					position: absolute
-					left: 0
-					top: 0
-					width: 100%
+					left: 3px
+					width: 95%
 					height: 100%
-					background-color: rgba(0, 0, 0, 0.6)
-					z-index: 2
+					z-index: 5
 			.slick-current
 				&::before
 					display: none
 			img
 				padding: 0 3px
+		&_mobile
+			height: 380px
+			&_01
+				height: 380px!important
+				background: url(../img/production/img1.jpg) no-repeat center
+				background-position: cover
+			&_02
+				height: 380px!important
+				background: url(../img/production/img2.jpg) no-repeat center
+				background-position: cover
+			&_03
+				height: 380px!important
+				background: url(../img/production/img3.jpg) no-repeat center
+				background-position: cover
+			&_04
+				height: 380px!important
+				background: url(../img/production/img4.jpg) no-repeat center
+				background-position: cover
+			&_05
+				height: 380px!important
+				background: url(../img/production/img5.jpg) no-repeat center
+				background-position: cover
+			&_06
+				height: 380px!important
+				background: url(../img/production/img6.jpg) no-repeat center
+				background-position: cover
+
 		
 	&-text
 		&__title
@@ -47,5 +73,46 @@
 			text-align: justify
 			width: 100%
 			margin-bottom: 20px
-
-
+			p
+				padding-bottom: 5px
+.slider-arrow
+	position: absolute
+	top: 0
+	height: 100%
+	z-index: 55
+	&_feedback
+		width: 22px
+		&:hover
+			cursor: pointer
+		&_right
+			right: 0
+			background: url(../img/right.png) center no-repeat
+		&_left
+			left: 0
+			background: url(../img/left.png) center no-repeat
+	&_prod
+		width: 22px
+		background-color: #fff
+		border: 1px solid $active-color
+		&:hover
+			cursor: pointer
+		&_right
+			right: 0
+			background: #fff url(../img/arrow_right.png) center no-repeat
+			&:hover
+				background: $active-color url(../img/arrow-right_active.png) center no-repeat
+		&_left
+			left: 0
+			background: #fff url(../img/arrow_left.png) center no-repeat
+			&:hover
+				background: $active-color url(../img/arrow-left_active.png) center no-repeat
+	&_mobile
+		width: 22px
+		&:hover
+			cursor: pointer
+		&_right
+			right: 0
+			background: url(../img/arrow_mobile_right.png) center no-repeat
+		&_left
+			left: 0
+			background: url(../img/arrow_mobile_left.png) center no-repeat

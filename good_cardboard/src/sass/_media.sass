@@ -4,9 +4,23 @@
 			left: 20%
 
 @media (max-width: 1240px)
+	.main
+		&-img
+			top: 40px
+			right: 30px
+			width: 360px
+			&::before
+				top: 0
+				left: 60%
+				width: 340px
+				height: 340px
 	.contacts
 		&-block
 			left: 10%
+	.products
+		padding-bottom: 30px
+	.production
+		padding-bottom: 40px
 
 @media (max-width: 991px)
 	.nav
@@ -15,10 +29,10 @@
 				padding: 0 3px
 				a
 					font-size: 10px
+	.main
+		text-align: center
 	.hidden-laptop
 		display: none
-	.call-bell
-		display: block
 	.header
 		&-contacts
 			font-size: 18px
@@ -29,7 +43,7 @@
 					font-weight: 700
 			&__btn
 				display: inline-block
-				padding: 7px
+				padding: 15px 10px
 	.phone2
 		border-left: none
 		padding-left: 0
@@ -57,10 +71,28 @@
 				-o-filter: grayscale(0%)
 				filter: none
 				-webkit-filter: grayscale(0)
+	.features
+		padding-bottom: 40px
+	.products
+		padding-top: 32px
+		padding-bottom: 25px
+	.offer
+		margin-bottom: 35px
 	.production
+		padding-bottom: 56px
 		&-text
+			&__title
+				text-align: center
+				padding-left: 0!important
+				display: flex
+				justify-content: center
+				padding: auto
+				font-size: 24px
+				font-weight: 700
+				text-transform: uppercase
 			&__descr
-				font-size: 12px
+				font-size: 15px
+				text-align-last: center
 	.contacts
 		&-block
 			left: 8%
@@ -88,7 +120,12 @@
 					left: 7%
 
 
-@media (max-width: 767px)
+@media (max-width: 768px)
+	.features
+		&-block
+			min-width: 290px
+			height: 125px
+			margin-bottom: 8px
 	.nav
 		display: none
 	.menu
@@ -101,8 +138,10 @@
 			left: 50px
 			top: -30px
 			background-size: 70%
-	.main
-		text-align: center
+		&-contacts
+			font-size: 15px
+			&__btn
+				padding: 7px
 	.overlay
 		.popup
 			&-title
@@ -126,7 +165,10 @@
 					height: 50px
 				&__note
 					margin: 0
+
 	.client
+		&s
+			margin-bottom: 0
 		&-block
 			&__img
 				max-width: 95%
@@ -142,7 +184,13 @@
 			display: none
 		.map
 			display: none
-
+	.feedback
+		padding-top: 36px
+	.production
+			&-text
+				&__descr
+					font-size: 14px
+					font-weight: 300
 @media (max-width: 575px)
 	.menu
 		&-link
@@ -203,6 +251,11 @@
 			line-height: 30px
 	.button_big
 		width: 180px
+	.section
+		&-title
+			font-size: 22px
+			&:after
+				display: none
 	.overlay
 		.popup
 			width: 90%
@@ -236,8 +289,12 @@
 					font-size: 12px
 				&__note
 					margin-top: 1px
-					font-size: 9px
-					line-height: 1
+					font-size: 12px
+	.production
+		&-text
+			&__title
+				font-size: 20px
+				
 	.products
 		&-block
 			&__title
@@ -245,7 +302,6 @@
 			&__button
 				margin-right: 5px
 			&__img
-				min-width: 100%
 				height: 231px
 	.numbers
 		margin-bottom: 0
@@ -255,6 +311,7 @@
 			&__text
 				font-size: 14px
 	.features
+		padding-top: 24px
 		&-blocks
 			justify-content: space-around
 		&-block
@@ -262,16 +319,6 @@
 	.client
 		padding-bottom: 5px
 		height: 87px
-	.production
-			&-text
-				&__title
-					text-align: center
-					display: flex
-					justify-content: center
-					padding: auto
-				&__descr
-					font-size: 14px
-					font-weight: 300
 	.offer
 		&-title
 			font-size: 20px
@@ -289,3 +336,15 @@
 	.footer
 		.rights
 			font-size: 11px
+	.slider-arrow
+		&_feedback
+			&:hover
+			&_right
+				background: url(../img/arrow_mobile_right.png) center no-repeat
+			&_left
+				background: url(../img/arrow_mobile_left.png) center no-repeat
+	.contacts
+		&-mobile
+			&__title
+				font-weight: 500
+				
